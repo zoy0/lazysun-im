@@ -28,7 +28,24 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lombok.version>1.18.24</lombok.version>
+        <httpclient.version>4.5.6</httpclient.version>
+        <fastjson.version>1.2.80</fastjson.version>
+        <netty.version>4.1.94.Final</netty.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <feign-core.version>8.18.0</feign-core.version>
+        <feign-jackson.version>8.18.0</feign-jackson.version>
     </properties>
+
+    <dependencies>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -36,35 +53,29 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
-            <!-- lombok -->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.24</version>
-            </dependency>
             <!--httpClient提供http访问-->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>4.5.6</version>
+                <version>${httpclient.version}</version>
             </dependency>
             <!-- fastjson -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.80</version>
+                <version>${fastjson.version}</version>
             </dependency>
             <!-- netty -->
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
-                <version>4.1.94.Final</version>
+                <version>${netty.version}</version>
             </dependency>
             <!-- commons-lang3 -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.12.0</version>
+                <version>${commons-lang3.version}</version>
             </dependency>
             <!-- rabbitmq -->
             <dependency>
@@ -81,12 +92,12 @@
             <dependency>
                 <groupId>com.netflix.feign</groupId>
                 <artifactId>feign-core</artifactId>
-                <version>8.18.0</version>
+                <version>${feign-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.netflix.feign</groupId>
                 <artifactId>feign-jackson</artifactId>
-                <version>8.18.0</version>
+                <version>${feign-jackson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -9,6 +9,7 @@
         <version>1.0</version>
     </parent>
 
+    <groupId>top.lazysun.im</groupId>
     <artifactId>codec</artifactId>
 
     <properties>
