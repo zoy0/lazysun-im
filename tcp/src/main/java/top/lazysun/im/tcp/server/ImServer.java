@@ -14,4 +14,8 @@ public class ImServer {
         this.config = config;
     }
 
+    public void start(){
+
+    }
+
 }

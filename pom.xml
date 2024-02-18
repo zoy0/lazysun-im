@@ -35,6 +35,7 @@
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <feign-core.version>8.18.0</feign-core.version>
         <feign-jackson.version>8.18.0</feign-jackson.version>
+        <amqp-client.version>5.9.0</amqp-client.version>
     </properties>
 
     <dependencies>
@@ -81,6 +82,7 @@
             <dependency>
                 <groupId>com.rabbitmq</groupId>
                 <artifactId>amqp-client</artifactId>
+                <version>${amqp-client.version}</version>
             </dependency>
             <!-- zookeeper -->
             <dependency>
